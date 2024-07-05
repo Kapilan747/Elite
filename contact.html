@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+
+    <nav class="navbar">
+        <h1>Elite</h1>
+
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="index.html">Home</a></p>
+            <p class="navbar-link"><a href="collections.html">Collections</a></p>
+            <p class="navbar-link"><a href="contact.html">Contact Us</a></p>
+        </div>
+
+        <div class="navbar-menu-toggle" onclick="showbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <div class="side-nav-bar">
+        <p style="text-align: right;" onclick="closebar()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+
+        <div class="side-navbar-links">
+            <p class="side-navbar-link"><a href="index.html">Home</a></p>
+            <p class="side-navbar-link"><a href="collections.html">Collections</a></p>
+            <p class="side-navbar-link"><a href="contact.html">Contact Us</a></p>
+        </div>
+    </div>
+
+    <!-- <main page -->
+        
+
+<center>
+    <div class="contact-popup">
+        <form class="contact-form">
+            <fieldset>
+                <legend>Contact Us</legend>
+                <table class="contact-table">
+                    <tr>
+                        <td>
+                            <input type="text" id="contact-name" name="name" placeholder="Your Name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" id="contact-elite-id" name="elite-id" placeholder="Your Elite Id">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="number" id="contact-mobile" name="mobile" placeholder="Mobile Number">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <textarea id="contact-feedback" name="feedback" placeholder="Your Feedback"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="submit" class="contact-button">Submit</button>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </div>
+    
+</center>
+    
+<div class="footer">
+    <div class="footer-container">
+        <div class="footer-box-1">
+            <h2 class="footer-head">Elite</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis suscipit eius, repellat corporis nemo quaerat.</p>
+        </div>
+
+        <div class="footer-icons">
+            <a href="https://www.facebook.com" target="blank" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com" target="blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.twitter.com" target="blank" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+
+        <p>@ 2024 Elite.com</p>
+    </div>
+</div>
+
+
+
+<script>
+    var sidenav = document.querySelector('.side-nav-bar')
+
+function showbar(){
+    sidenav.style.right = '0';
+
+}
+
+function closebar(){
+    sidenav.style.right = '-90%';
+
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
